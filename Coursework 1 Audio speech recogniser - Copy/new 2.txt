@@ -1,0 +1,48 @@
+ HInit -S lists/trainList.txt -l Albi -L labels/train -M hmms -o Albi -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Alex -L labels/train -M hmms -o Alex -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Alexander -L labels/train -M hmms -o Alexander -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Alejandro -L labels/train -M hmms -o Alejandro -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Aurelie -L labels/train -M hmms -o Aurelie -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Benjamin -L labels/train -M hmms -o Benjamin -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Brennan -L labels/train -M hmms -o Brennan -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Felipe -L labels/train -M hmms -o Felipe -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Harry -L labels/train -M hmms -o Harry -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Hemal -L labels/train -M hmms -o Hemal -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Hugo -L labels/train -M hmms -o Hugo -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Max -L labels/train -M hmms -o Max -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Nathaniel -L labels/train -M hmms -o Nathaniel -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Owen -L labels/train -M hmms -o Owen -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Ruby -L labels/train -M hmms -o Ruby -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Ruaridh -L labels/train -M hmms -o Ruaridh -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Sarah -L labels/train -M hmms -o Sarah -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Sophie -L labels/train -M hmms -o Sophie -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Vav -L labels/train -M hmms -o Vav -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l Yan -L labels/train -M hmms -o Yan -T 1 lib/proto8States.txt;
+
+ HInit -S lists/trainList.txt -l sil -L labels/train -M hmms -o sil -T 1 lib/proto8States.txt;
+
+
+
+HVite -T  1 -S  lists/testList.txt -d  hmms/ -w  lib/NET -l results lib/dict lib/words3
+
+HResults -p -e  "???" sil -e  "???" sp -L labels/test lib/words3 results/*.rec
+
